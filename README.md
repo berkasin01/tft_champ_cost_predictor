@@ -30,10 +30,14 @@ Cost 1 and 3 perform best (f1: 0.81)
 Cost 2 is the hardest to predict (f1: 0.62) - sits between cost 1 and 3 with overlapping stats
 
 Confusion Matrix
-Show Image
+
+<img width="1200" height="900" alt="confusion_matrix" src="https://github.com/user-attachments/assets/4b9403ea-a96c-48dd-baf4-bbcb128873fd" />
+
 Almost all misclassifications happen between adjacent cost tiers (1↔2, 2↔3, 3↔4, 4↔5). The model almost never confuses a 1-cost for a 5-cost. This makes sense champion stats scale roughly with cost but Riot designs neighbouring tiers with overlapping stat ranges, especially in the mid-tiers.
 Feature Importance
-Show Image
+
+<img width="1500" height="900" alt="feature_importance" src="https://github.com/user-attachments/assets/65be0865-c404-4c18-8472-1c6764d5017b" />
+
 Built With
 
 Python, pandas, NumPy, scikit-learn, seaborn, matplotlib
